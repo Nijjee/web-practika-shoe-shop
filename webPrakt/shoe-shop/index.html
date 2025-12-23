@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Магазин обуви</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Магазин обуви</h1>
+        <nav>
+            <a href="index.html">Каталог</a>
+            <a href="cart.html">Корзина</a>
+        </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Популярные модели</h1>
+    <div class="grid" id="catalog"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const catalog = document.getElementById('catalog');
+    products.forEach(p => {
+      catalog.innerHTML += `
+        <div class="card">
+          <img src="${p.img}" alt="${p.name}">
+          <div class="card-content">
+            <h3>${p.name}</h3>
+            <div class="price">${p.price.toLocaleString()} ₽</div>
+            <a href="product.html?id=${p.id}" class="btn">Подробнее</a>
+          </div>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Магазин обуви</h1>
+      <nav>
+        <a href="index.html">Каталог</a>
+        <a href="cart.html">Корзина</a>
+        <a href="login.html">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="auth-form">
+      <h2>Регистрация</h2>
+      <input id="reg-name" placeholder="Имя" required>
+      <input id="reg-email" type="email" placeholder="Email" required>
+      <input id="reg-password" type="password" placeholder="Пароль" required>
+      <button onclick="register()">Зарегистрироваться</button>
+      <div class="auth-links">
+        Уже есть аккаунт? <a href="login.html">Войти</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
